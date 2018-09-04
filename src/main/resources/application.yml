@@ -6,7 +6,7 @@ management:
   shutdown:
    enabled: true #是否可通过endpoints关停应用服务
   web:
-    base-path: /monitor
+    base-path: /actuator
     exposure:
       include: '*'
  endpoint:
@@ -15,4 +15,9 @@ management:
 
 info:
  app:
-  name: spring-cloud-base
+  name: clientA1
+
+
+spring:
+  profiles:
+    active: dev

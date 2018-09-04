@@ -1,2 +1,18 @@
 server:
   port: 8091
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://127.0.0.1:9010/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+
+
+spring:
+  application:
+    name: clientA1
