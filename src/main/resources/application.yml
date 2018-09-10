@@ -15,7 +15,7 @@ management:
 
 info:
  app:
-  name: clientA1
+  name: clientB1
 
 
 spring:
